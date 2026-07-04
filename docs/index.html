@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>darkP - Privacy Policy & Support</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.7;
+      color: #333;
+      background: #fff;
+    }
+    h1 { font-size: 2.2em; margin-bottom: 10px; }
+    h2 { font-size: 1.4em; margin-top: 32px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+    .meta { color: #888; font-size: 0.95em; margin-bottom: 24px; }
+    .section { margin-bottom: 24px; }
+    .lang-switch { margin-bottom: 28px; }
+    .lang-switch button {
+      margin-right: 12px;
+      padding: 6px 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background: #f5f5f5;
+      color: #333;
+      cursor: pointer;
+      font-size: 0.95em;
+    }
+    .lang-switch button.active {
+      background: #0066cc;
+      border-color: #0066cc;
+      color: #fff;
+    }
+    .lang-content { display: none; }
+    .lang-content.active { display: block; }
+    footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid #eee; font-size: 0.9em; color: #666; }
+    ul { padding-left: 20px; }
+    a { color: #0066cc; }
+  </style>
+</head>
+<body>
+
+  <h1>darkP</h1>
+  <p class="meta" id="meta-zh">最后更新：2026 年 7 月 4 日</p>
+  <p class="meta" id="meta-en" style="display:none;">Last updated: July 4, 2026</p>
+
+  <div class="lang-switch">
+    <button type="button" id="btn-zh" class="active" onclick="switchLang('zh')">中文</button>
+    <button type="button" id="btn-en" onclick="switchLang('en')">English</button>
+  </div>
+
+  <div id="zh" class="lang-content active">
+    <h2>隐私政策</h2>
+
+    <div class="section">
+      <p><strong>darkP</strong> 是一款专为弱视用户设计的 macOS 图片颜色反转工具。</p>
+    </div>
+
+    <div class="section">
+      <h2>我们收集的信息</h2>
+      <p>darkP <strong>不收集、不存储、不传输任何用户个人数据</strong>。</p>
+      <ul>
+        <li>我们不会要求您创建账户或登录</li>
+        <li>我们不会访问您的联系人、位置、相机或其他敏感数据</li>
+        <li>图片处理全部在本地完成，处理后的临时文件会在使用后自动删除</li>
+        <li>应用内购买通过 Apple StoreKit 处理，我们不会获取您的支付信息</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>支持与联系</h2>
+      <p>如果您在使用过程中遇到问题，欢迎通过以下方式联系我们：</p>
+      <ul>
+        <li>GitHub Issues：<a href="https://github.com/MissionaryHGQ/DarkPreview-Privacy/issues" target="_blank" rel="noopener">提交问题</a></li>
+        <li>邮箱：<a href="mailto:83831617@qq.com">83831617@qq.com</a></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>政策更新</h2>
+      <p>我们可能会不时更新本隐私政策。更新后的版本将发布在此页面。</p>
+    </div>
+  </div>
+
+  <div id="en" class="lang-content">
+    <h2>Privacy Policy</h2>
+
+    <div class="section">
+      <p><strong>darkP</strong> is a macOS utility designed to assist users with visual impairments by providing instant black-and-white color inversion of images.</p>
+    </div>
+
+    <div class="section">
+      <h2>Information We Collect</h2>
+      <p>darkP <strong>does not collect, store, or transmit any personal user data</strong>.</p>
+      <ul>
+        <li>We do not require account creation or login</li>
+        <li>We do not access your contacts, location, camera, or other sensitive data</li>
+        <li>All image processing is performed locally; temporary files are automatically deleted after use</li>
+        <li>In-app purchases are handled exclusively through Apple StoreKit; we do not receive any payment information</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Support &amp; Contact</h2>
+      <p>If you encounter any issues while using the app, please reach out:</p>
+      <ul>
+        <li>GitHub Issues: <a href="https://github.com/MissionaryHGQ/DarkPreview-Privacy/issues" target="_blank" rel="noopener">Submit an issue</a></li>
+        <li>Email: <a href="mailto:83831617@qq.com">83831617@qq.com</a></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Policy Updates</h2>
+      <p>We may update this privacy policy from time to time. Updated versions will be posted on this page.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p id="footer-zh">© 2026 darkP. 保留所有权利。本页面用于满足 Apple App Store 隐私政策与支持 URL 要求。</p>
+    <p id="footer-en" style="display:none;">© 2026 darkP. All rights reserved. This page is provided for Apple App Store privacy policy and support URL requirements.</p>
+  </footer>
+
+  <script>
+    function switchLang(lang) {
+      document.getElementById('zh').classList.toggle('active', lang === 'zh');
+      document.getElementById('en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-zh').classList.toggle('active', lang === 'zh');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('meta-zh').style.display = lang === 'zh' ? 'block' : 'none';
+      document.getElementById('meta-en').style.display = lang === 'en' ? 'block' : 'none';
+      document.getElementById('footer-zh').style.display = lang === 'zh' ? 'block' : 'none';
+      document.getElementById('footer-en').style.display = lang === 'en' ? 'block' : 'none';
+      document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+      history.replaceState(null, '', lang === 'zh' ? '#zh' : '#en');
+    }
+
+    if (location.hash === '#en') {
+      switchLang('en');
+    }
+  </script>
+
+</body>
+</html>
