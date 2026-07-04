@@ -47,6 +47,13 @@
   <p class="meta" id="meta-zh">最后更新：2026 年 7 月 4 日</p>
   <p class="meta" id="meta-en" style="display:none;">Last updated: July 4, 2026</p>
 
+  <div class="nav" style="margin-bottom: 24px; font-size: 0.95em;">
+    <strong id="nav-privacy-zh">隐私政策</strong>
+    <strong id="nav-privacy-en" style="display:none;">Privacy Policy</strong>
+    <a href="support.html" id="nav-support-zh" style="margin-left: 16px;">技术支持</a>
+    <a href="support.html" id="nav-support-en" style="display:none; margin-left: 16px;">Support</a>
+  </div>
+
   <div class="lang-switch">
     <button type="button" id="btn-zh" class="active" onclick="switchLang('zh')">中文</button>
     <button type="button" id="btn-en" onclick="switchLang('en')">English</button>
@@ -119,8 +126,8 @@
   </div>
 
   <footer>
-    <p id="footer-zh">© 2026 darkP. 保留所有权利。本页面用于满足 Apple App Store 隐私政策与支持 URL 要求。</p>
-    <p id="footer-en" style="display:none;">© 2026 darkP. All rights reserved. This page is provided for Apple App Store privacy policy and support URL requirements.</p>
+    <p id="footer-zh">© 2026 darkP. 保留所有权利。本页面用于满足 Apple App Store 隐私政策与支持 URL 要求。 · <a href="support.html">技术支持</a></p>
+    <p id="footer-en" style="display:none;">© 2026 darkP. All rights reserved. This page is provided for Apple App Store privacy policy and support URL requirements. · <a href="support.html">Support</a></p>
   </footer>
 
   <script>
@@ -131,6 +138,10 @@
       document.getElementById('btn-en').classList.toggle('active', lang === 'en');
       document.getElementById('meta-zh').style.display = lang === 'zh' ? 'block' : 'none';
       document.getElementById('meta-en').style.display = lang === 'en' ? 'block' : 'none';
+      document.getElementById('nav-support-zh').style.display = lang === 'zh' ? 'inline' : 'none';
+      document.getElementById('nav-support-en').style.display = lang === 'en' ? 'inline' : 'none';
+      document.getElementById('nav-privacy-zh').style.display = lang === 'zh' ? 'inline' : 'none';
+      document.getElementById('nav-privacy-en').style.display = lang === 'en' ? 'inline' : 'none';
       document.getElementById('footer-zh').style.display = lang === 'zh' ? 'block' : 'none';
       document.getElementById('footer-en').style.display = lang === 'en' ? 'block' : 'none';
       document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
